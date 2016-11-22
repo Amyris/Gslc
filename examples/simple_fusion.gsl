@@ -1,0 +1,4 @@
+// truncate the HMG1 gene and prepend a short start sequence
+#stitch
+/ATGG/ ; gHMG1[1586:~200E]
+

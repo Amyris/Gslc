@@ -1,0 +1,13 @@
+// Part definitions 
+let pGAL1_10 = gGAL1[-668:-1]
+let truncHMGR = /ATGG/ {#rabitstart }; gHMG1[1586:~200E] 
+
+// Locus engineering 
+
+uERG9 ; ### ; pMET3 ; gERG9[1:~500] 
+uLEU2 ; ### ; !mERG8 ; @pGAL1_10 ; mMVD1 ; dLEU2 
+gHIS3[~-1000:-500]; ### ; !mERG10 ; @pGAL1_10 ; mERG12 ; gHIS3[-500:~500] 
+gADE1[~-1000:-500]; ### ; !mIDI1 ; @pGAL1_10 ; @truncHMGR ; gADE1[-500:~500] 
+gURA3[~-1000:-500]; ### ; !mERG13 ; @pGAL1_10 ; @truncHMGR ; gURA3[-500:~500] 
+gTRP1[~-1000:-500]; ### ; !@truncHMGR ; @pGAL1_10 ; mERG20 ; gTRP1[-500:~500]
+
