@@ -28,24 +28,24 @@ open SourceLink
 
 // The name of the project
 // (used by attributes in AssemblyInfo, name of a NuGet package and directory in 'src')
-let project = "GSL"
+let project = "Gslc"
 
 // Short summary of the project
 // (used as description in AssemblyInfo and as a short summary for NuGet package)
-let summary = "Compiler and tools for GSL."
+let summary = "GSL compiler command line application"
 
 // Longer description of the project
 // (used as a description for NuGet package; line breaks are automatically cleaned up)
 let description = "Compiler and tools for the Amyris Genome Specification Language (GSL)."
 
 // List of author names (for NuGet package)
-let authors = [ "Darren Platt" ]
+let authors = [ "Darren Platt"; "Chris Macklin" ]
 
 // Tags for your project (for NuGet package)
 let tags = "GSL amyris compiler'"
 
 // File system information
-let solutionFile  = "GSL.sln"
+let solutionFile  = "Gslc.sln"
 
 // Pattern specifying assemblies to be tested using NUnit
 let testAssemblies = "tests/**/bin/Release/*Tests*.dll"
@@ -56,7 +56,7 @@ let gitOwner = "Update GitHome in build.fsx"
 let gitHome = sprintf "%s/%s" "https://github.com" gitOwner
 
 // The name of the project on GitHub
-let gitName = "GSL"
+let gitName = "Gslc"
 
 // The url for the raw files hosted
 let gitRaw = environVarOrDefault "gitRaw" "https://raw.githubusercontent.com/Update GitHome in build.fsx"

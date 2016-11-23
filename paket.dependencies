@@ -1,13 +1,7 @@
 source https://nuget.org/api/v2
 
+nuget GslCore
 nuget FSharp.Core redirects: force
-nuget Amyris.Bio >= 2.0.11 framework: >= net45
-nuget FSharp.Data
-nuget Newtonsoft.Json
-nuget FsLexYacc < 7
-nuget FsLexYacc.Runtime < 7
-nuget FParsec
-nuget MathNet.Numerics
 
 group Build
   source https://nuget.org/api/v2

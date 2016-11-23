@@ -3,15 +3,15 @@ namespace System
 open System.Reflection
 
 [<assembly: AssemblyTitleAttribute("Gslc")>]
-[<assembly: AssemblyProductAttribute("GSL")>]
-[<assembly: AssemblyDescriptionAttribute("Compiler and tools for GSL.")>]
-[<assembly: AssemblyVersionAttribute("1.0")>]
-[<assembly: AssemblyFileVersionAttribute("1.0")>]
+[<assembly: AssemblyProductAttribute("Gslc")>]
+[<assembly: AssemblyDescriptionAttribute("GSL compiler command line application")>]
+[<assembly: AssemblyVersionAttribute("0.0.1")>]
+[<assembly: AssemblyFileVersionAttribute("0.0.1")>]
 do ()
 
 module internal AssemblyVersionInformation =
     let [<Literal>] AssemblyTitle = "Gslc"
-    let [<Literal>] AssemblyProduct = "GSL"
-    let [<Literal>] AssemblyDescription = "Compiler and tools for GSL."
-    let [<Literal>] AssemblyVersion = "1.0"
-    let [<Literal>] AssemblyFileVersion = "1.0"
+    let [<Literal>] AssemblyProduct = "Gslc"
+    let [<Literal>] AssemblyDescription = "GSL compiler command line application"
+    let [<Literal>] AssemblyVersion = "0.0.1"
+    let [<Literal>] AssemblyFileVersion = "0.0.1"
