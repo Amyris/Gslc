@@ -32,10 +32,10 @@ NUGET
     FsLexYacc (6.1)
       FsLexYacc.Runtime (>= 6.1)
     FsLexYacc.Runtime (6.1)
-    GslCore (0.4.17)
+    GslCore (0.4.18)
       Amyris.Bio (>= 2.0.18)
       FParsec
-      FSharp.Core
+      FSharp.Core (>= 4.1)
       FSharp.Data
       FsLexYacc (< 7.0)
       FsLexYacc.Runtime (< 7.0)
