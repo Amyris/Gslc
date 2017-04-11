@@ -27,7 +27,7 @@ NUGET
       System.Threading.ThreadPool (>= 4.0.10) - framework: >= netstandard16
       System.Threading.Timer (>= 4.0.1) - framework: >= netstandard16
       System.ValueTuple (>= 4.3) - framework: >= net10, netstandard10, netstandard11, netstandard12, netstandard13, netstandard14, netstandard15
-    FSharp.Data (2.3.2)
+    FSharp.Data (2.3.3)
       Zlib.Portable (>= 1.11) - framework: >= netstandard11, portable-net45+sl5+win8, portable-net45+win8, portable-net45+win8+wp8+wpa81
     FsLexYacc (6.1)
       FsLexYacc.Runtime (>= 6.1)
@@ -682,7 +682,7 @@ NUGET
 GROUP Build
 NUGET
   remote: https://www.nuget.org/api/v2
-    FAKE (4.57.4)
+    FAKE (4.58.5)
     FSharp.Compiler.Service (2.0.0.6)
     FSharp.Formatting (2.14.4)
       FSharp.Compiler.Service (2.0.0.6)
@@ -700,7 +700,7 @@ NUGET
     SourceLink.Fake (1.1)
 GITHUB
   remote: fsharp/FAKE
-    modules/Octokit/Octokit.fsx (5e78ad79e69e3c3bff23ad907594fa53b81e1304)
+    modules/Octokit/Octokit.fsx (57861eced50a8c20de672663718294d89bdfc83c)
       Octokit (>= 0.20)
 GROUP Test
 NUGET
