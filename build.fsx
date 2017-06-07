@@ -8,6 +8,7 @@ open Fake.Git
 open Fake.AssemblyInfoFile
 open Fake.ReleaseNotesHelper
 open Fake.UserInputHelper
+open Fake.Testing
 open System
 open System.IO
 #if MONO
@@ -15,6 +16,8 @@ open System.IO
 #load "packages/build/SourceLink.Fake/tools/Fake.fsx"
 open SourceLink
 #endif
+
+let nunitRunnerPath = "packages/test/NUnit.ConsoleRunner/tools/nunit3-console.exe"
 
 // --------------------------------------------------------------------------------------
 // START TODO: Provide project-specific details below
@@ -141,11 +144,12 @@ Target "Build" (fun _ ->
 
 Target "RunTests" (fun _ ->
     !! testAssemblies
-    |> NUnit (fun p ->
+    |> NUnit3 (fun p ->
         { p with
-            DisableShadowCopy = true
-            TimeOut = TimeSpan.FromMinutes 20.
-            OutputFile = "TestResults.xml" })
+            ToolPath = nunitRunnerPath
+            Labels = LabelsLevel.All
+            ResultSpecs = ["TestResults.xml"]
+            })
 )
 
 #if MONO

@@ -5,7 +5,7 @@ open System
 open NUnit.Framework
 
 [<TestFixture>]
-type Test() = 
+type Test() =
 
     [<Test>]
     member x.TestCase() =

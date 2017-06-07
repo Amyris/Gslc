@@ -1,1 +1,4 @@
 FSharp.Core
+
+group Test
+    NUnit
