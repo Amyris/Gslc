@@ -1,6 +1,6 @@
 source https://nuget.org/api/v2
 
-nuget GslCore >= 0.4.18
+nuget GslCore >= 0.4.20
 nuget FSharp.Core >= 4.1.0 redirects: force
 
 group Build
