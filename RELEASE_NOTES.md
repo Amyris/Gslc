@@ -1,3 +1,6 @@
+#### 0.1.0 - June 16 2016
+* Upgrade to latest GslCore, adding support for parts as promoters in L2 titrations.
+
 #### 0.0.3 - June 7 2016
 * Update to NUnit 3.
 
