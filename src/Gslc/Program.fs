@@ -8,9 +8,11 @@ open BasicAlleleSwapProvider
 open BasicL2ExpansionProvider
 open utils
 
+let seamlessPlugin = (SeamlessPlugin.createSeamlessPlugin true (fun _ x -> x))
 let allPlugins = 
     basicOutputPlugins@
-    [autodeskJsonOutputPlugin;
+    [seamlessPlugin;
+     autodeskJsonOutputPlugin;
      basicCodonProviderPlugin;
      basicAlleleSwapPlugin;
      basicL2ExpansionPlugin]
