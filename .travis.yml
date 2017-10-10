@@ -3,6 +3,10 @@ services:
 
 sudo: required
 
+branches:
+  only:
+  - master
+
 git:
     submodules: false
 
