@@ -6,16 +6,18 @@ open JsonAssembly
 open BasicCodonProvider
 open BasicAlleleSwapProvider
 open BasicL2ExpansionProvider
+open BasicMarkerProvider
 open utils
 
 let seamlessPlugin = (SeamlessPlugin.createSeamlessPlugin true (fun _ x -> x))
-let allPlugins = 
+let allPlugins =
     basicOutputPlugins@
     [seamlessPlugin;
      autodeskJsonOutputPlugin;
      basicCodonProviderPlugin;
      basicAlleleSwapPlugin;
-     basicL2ExpansionPlugin]
+     basicL2ExpansionPlugin;
+     basicMarkerProviderURA3]
 
 [<EntryPoint>]
 let main argv =
