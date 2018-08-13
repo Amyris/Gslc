@@ -192,3 +192,6 @@ docs/content/release-notes.md
 docs/tools/FSharp.Formatting.svclog
 paket.local
 
+#Docker build directory
+tmpDockerBuild
+

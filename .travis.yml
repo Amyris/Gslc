@@ -1,0 +1,17 @@
+services:
+  - docker
+
+sudo: required
+
+branches:
+  only:
+  - master
+
+before_install:
+  #Update docker
+  - sudo apt-get update
+  - sudo apt-get -y -o Dpkg::Options::="--force-confnew" install docker-ce
+  - docker --version
+
+script:
+  - /bin/bash build-docker-image.sh
