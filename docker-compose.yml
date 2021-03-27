@@ -1,0 +1,8 @@
+version: '3'
+services:
+  gsl:
+    container_name: gsl
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: gsl
