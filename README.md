@@ -8,6 +8,11 @@ Documentation in the repo is sparse currently, but you can find
 * GSL documentation as part of the Autodesk genetic constructor tool here https://geneticconstructor.readme.io/docs/genotype-specification-language
 * the press release on the GSL / Autodesk collaboration here http://investors.amyris.com/releasedetail.cfm?ReleaseID=992005
 
+# To build and run using dotnet
+```
+dotnet build src/Gslc -o bin/Gslc
+./bin/Gslc/Gslc --help
+```
 
 # To create a windows executable in the bin/Gscl directory
 ```
@@ -15,14 +20,7 @@ dotnet publish src\Gslc -r win-x64 -p:PublishSingleFile=true --self-contained tr
 bin\Gslc\Gslc.exe --help
 ```
 
-# Alternately, simply build and run using dotnet
-```
-dotnet build src\Gslc
-dotnet src\Gslc\bin\Debug\net5.0\Gslc.dll --help
-```
-
 # Example usage
 ```bash
-dotnet src\Gslc\bin\Debug\net5.0\Gslc.dll --noprimers --defaultRef S288C --step examples\simple_fusion.gsl
+./bin/Gslc/Gslc --noprimers --defaultRef S288C --step examples/simple_fusion.gsl
 ```
-
